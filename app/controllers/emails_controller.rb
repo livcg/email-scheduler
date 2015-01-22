@@ -28,7 +28,8 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       if @email.save
-        Emailer.schedule_email(@email).deliver_now # Send right away for now
+        SendEmailJob.perform_now(@email) 
+#        SendEmailJob.set(wait: 1.minutes).perform_later(@email) # Wait 1 minute for now
 
         format.html { redirect_to @email, notice: 'Email was successfully created.' }
         format.json { render :show, status: :created, location: @email }
