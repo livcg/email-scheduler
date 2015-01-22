@@ -9,5 +9,6 @@ class Emailer < ApplicationMailer
                          port: 587 }
     mail(to: @email.to, subject: @email.subject, body: @email.body,
          delivery_method_options: delivery_options)
+    email.destroy
   end
 end
