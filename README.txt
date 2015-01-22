@@ -39,6 +39,7 @@ x. Create Procfile for rails server & job/queue/worker process
 * Remove Mailgun login from config files & use env vars
 * Add helpful msgs to log
 * Change from address to something like email-scheduler@example.com
+* Add to README; change to md
 
 UI
 * Assets not loading on heroku:
@@ -54,7 +55,4 @@ https://emaillater.herokuapp.com/assets/application-595be6fdabce84ec71f1ace93c9d
 * Only allow send dates & times in the future
 * Low pri: Add from address?
 * Low pri: HTML in body?
-* Low pri: Automatically update list of emails when email is sent
-
-
-
+* Low pri: Change success page to redirect to show page w/ success msg?

@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby "2.2.0"
-
 gem 'delayed_job_active_record'
+
+gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -46,3 +46,4 @@ group :development, :test do
   gem 'spring'
 end
 
+ruby "2.2.0"
