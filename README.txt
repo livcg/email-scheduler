@@ -24,27 +24,35 @@ x. Add job queue
 x. Send emails at specified times
 x. Remove email entry fr. DB
 x. List scheduled emails ordered to nearest one
-* Push to github
-* Deploy to heroku
-* Ensure job queue is running
+x. Push to github
+x. Deploy to heroku
+x. Create Procfile for rails server & job/queue/worker process
 * Validate email address - Use API (just search one from google) e.g. http://blog.mashape.com/list-of-25-email-validation-apis/
 * Add rspec tests
-* Require fields in email
-* Add test data
   * Send date time in past
   * Send date time ~now
   * Account for timezones
-* Add helpful msgs to log
+  * Etc.
 * Instead of removing sent emails from DB, keep record & mark as sent
+* Add root route
+* Require fields in email
+* Remove Mailgun login from config files & use env vars
+* Add helpful msgs to log
+* Change from address to something like email-scheduler@example.com
 
 UI
-* Mv "New Email" link to top of page & make into a button
+* Assets not loading on heroku:
+"Failed to load resource: the server responded with a status of 404 (Not Found)":
+https://emaillater.herokuapp.com/assets/application-595be6fdabce84ec71f1ace93c9de8fa.css
+https://emaillater.herokuapp.com/assets/application-8474e4f266741613a6d5486dc2913241.js
+https://emaillater.herokuapp.com/assets/application-595be6fdabce84ec71f1ace93c9de8fa.css
+* Mv "New Email" link to top of page & change into a button
 * Label timezone
-* Fix styling
 * If there are no emails to send, display msg
+* Improve styling
 * Rmv/implement Show|Edit|Destroy links
 * Only allow send dates & times in the future
-* Add from address?
+* Low pri: Add from address?
 * Low pri: HTML in body?
 * Low pri: Automatically update list of emails when email is sent
 
