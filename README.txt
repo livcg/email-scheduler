@@ -28,6 +28,7 @@ x. List scheduled emails ordered to nearest one
   * Send date time ~now
   * Account for timezones
 * Add helpful msgs to log
+* Instead of removing sent emails from DB, keep record & mark as sent
 
 UI
 * Mv "New Email" link to top of page & make into a button
@@ -35,7 +36,10 @@ UI
 * Fix styling
 * If there are no emails to send, display msg
 * Rmv/implement Show|Edit|Destroy links
+* Only allow send dates & times in the future
+* Add from address?
 * Low pri: HTML in body?
 * Low pri: Automatically update list of emails when email is sent
+
 
 
