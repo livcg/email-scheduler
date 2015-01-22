@@ -1,8 +1,15 @@
 Rails app that sends scheduled emails.
 
-URL's:
-http://localhost:3000/emails
-http://localhost:3000/rails/mailers/emailer/schedule_email_preview
+
+Hostnames:
+http://localhost:3000
+https://emaillater.herokuapp.com
+
+Paths:
+emails
+emails/<ID>
+new
+rails/mailers/emailer/schedule_email_preview
 
 
 -----
