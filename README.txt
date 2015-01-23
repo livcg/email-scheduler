@@ -28,13 +28,13 @@ x. Push to github
 x. Deploy to heroku
 x. Create Procfile for rails server & job/queue/worker process
 x. Change from address to something like email-scheduler@example.com
-***===>>> I'M HERE
-* Validate email address - Use API (just search one from google) e.g. http://blog.mashape.com/list-of-25-email-validation-apis/
+x. Validate email address - Use API (just search one from google) e.g. http://blog.mashape.com/list-of-25-email-validation-apis/
 * Add rspec tests
   * Send date time in past
   * Send date time ~now
   * Account for timezones
   * Etc.
+***===>>> I'M HERE
 * Instead of removing sent emails from DB, keep record & mark as sent
 * Add root route
 * Require fields in email
