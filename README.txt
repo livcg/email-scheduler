@@ -27,6 +27,8 @@ x. List scheduled emails ordered to nearest one
 x. Push to github
 x. Deploy to heroku
 x. Create Procfile for rails server & job/queue/worker process
+x. Change from address to something like email-scheduler@example.com
+***===>>> I'M HERE
 * Validate email address - Use API (just search one from google) e.g. http://blog.mashape.com/list-of-25-email-validation-apis/
 * Add rspec tests
   * Send date time in past
@@ -38,11 +40,11 @@ x. Create Procfile for rails server & job/queue/worker process
 * Require fields in email
 * Remove Mailgun login from config files & use env vars
 * Add helpful msgs to log
-* Change from address to something like email-scheduler@example.com
 * Add to README; change to md
+* Externalize strings, e.g. error msgs
 
 UI
-* Assets not loading on heroku:
+x. Assets not loading on heroku:
 "Failed to load resource: the server responded with a status of 404 (Not Found)":
 https://emaillater.herokuapp.com/assets/application-595be6fdabce84ec71f1ace93c9de8fa.css
 https://emaillater.herokuapp.com/assets/application-8474e4f266741613a6d5486dc2913241.js

@@ -1,12 +1,17 @@
 source 'https://rubygems.org'
 
+# Use delayed_job job gueue
 gem 'delayed_job_active_record'
 
+# Use HTTParty for consuming API's
+gem 'httparty', '~> 0.13.3'
+
+# Run Rails teh 12factor way
 gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use postrgres as the database for Active Record
+# Use postgres as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
