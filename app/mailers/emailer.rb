@@ -1,5 +1,5 @@
 class Emailer < ApplicationMailer
-  default from: 'livcg@example.com'
+  default from: 'email-scheduler@example.com'
  
   def schedule_email(email)
     @email = email
