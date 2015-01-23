@@ -58,3 +58,4 @@ https://emaillater.herokuapp.com/assets/application-595be6fdabce84ec71f1ace93c9d
 * Low pri: Add from address?
 * Low pri: HTML in body?
 * Low pri: Change success page to redirect to show page w/ success msg?
+* Low pri: Improve error message styling

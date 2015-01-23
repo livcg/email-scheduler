@@ -6,7 +6,10 @@ class Email < ActiveRecord::Base
   validate :to_email_addy_must_be_valid
 
   def to_email_addy_must_be_valid
-    if to == 'test'
+    options =  { basic_auth: { username: ENV['MG_UN'], password: ENV['MG_PW'] } }
+    options[:body] = { address: to }
+    response = HTTParty.get('https://api.mailgun.net/v2/address/validate', options)
+    if !response['is_valid']
       errors.add(:to, 'Invalid email address')
     end
   end
