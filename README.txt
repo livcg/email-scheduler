@@ -36,6 +36,7 @@ x. Validate email address - Use API (just search one from google) e.g. http://bl
   * Etc.
 ***===>>> I'M HERE
 * Instead of removing sent emails from DB, keep record & mark as sent
+* Validate email addy only if it's not empty
 * Add root route
 * Require fields in email
 * Remove Mailgun login from config files & use env vars

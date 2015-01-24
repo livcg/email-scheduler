@@ -9,6 +9,7 @@
       <th>Subject</th>
       <th>Body</th>
       <th>Send date time</th>
+      <th>Sent?</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= email.subject %></td>
         <td><%= email.body %></td>
         <td><%= email.send_date_time %></td>
+	<td><%= email.sent %></td>
         <td><%= link_to 'Show', email %></td>
         <td><%= link_to 'Edit', edit_email_path(email) %></td>
         <td><%= link_to 'Destroy', email, method: :delete, data: { confirm: 'Are you sure?' } %></td>
