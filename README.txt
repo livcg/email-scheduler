@@ -32,13 +32,13 @@ x. Require fields in email
 x. Remove Mailgun login from config files & use env vars
 x. Validate email address - Use API (just search one from google) e.g. http://blog.mashape.com/list-of-25-email-validation-apis/
 x. Instead of removing sent emails from DB, keep record & mark as sent
-***===>>> I'M HERE
+x. Validate email addy only if it's not empty
 * Add rspec tests
   * Send date time in past
   * Send date time ~now
   * Account for timezones
   * Etc.
-* Validate email addy only if it's not empty
+***===>>> I'M HERE
 * Add root route
 * Add helpful msgs to log
 * Add to README; change to md
