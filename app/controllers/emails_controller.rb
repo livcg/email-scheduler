@@ -4,7 +4,8 @@ class EmailsController < ApplicationController
   # GET /emails
   # GET /emails.json
   def index
-    @emails = Email.all.order(:send_date_time)
+    @emails = Email.where(sent: false).order(:send_date_time)
+    @sentemails = Email.where(sent: true).order(:send_date_time)
   end
 
   # GET /emails/1

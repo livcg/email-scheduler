@@ -9,6 +9,7 @@ class Emailer < ApplicationMailer
                          port: ENV['SMTP_PORT'] }
     mail(to: @email.to, subject: @email.subject, body: @email.body,
          delivery_method_options: delivery_options)
-    email.destroy
+    @email.sent = true
+    @email.save
   end
 end

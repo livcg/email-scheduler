@@ -28,18 +28,18 @@ x. Push to github
 x. Deploy to heroku
 x. Create Procfile for rails server & job/queue/worker process
 x. Change from address to something like email-scheduler@example.com
+x. Require fields in email
+x. Remove Mailgun login from config files & use env vars
 x. Validate email address - Use API (just search one from google) e.g. http://blog.mashape.com/list-of-25-email-validation-apis/
+x. Instead of removing sent emails from DB, keep record & mark as sent
+***===>>> I'M HERE
 * Add rspec tests
   * Send date time in past
   * Send date time ~now
   * Account for timezones
   * Etc.
-***===>>> I'M HERE
-* Instead of removing sent emails from DB, keep record & mark as sent
 * Validate email addy only if it's not empty
 * Add root route
-* Require fields in email
-* Remove Mailgun login from config files & use env vars
 * Add helpful msgs to log
 * Add to README; change to md
 * Externalize strings, e.g. error msgs
@@ -60,3 +60,4 @@ https://emaillater.herokuapp.com/assets/application-595be6fdabce84ec71f1ace93c9d
 * Low pri: HTML in body?
 * Low pri: Change success page to redirect to show page w/ success msg?
 * Low pri: Improve error message styling
+* Low pri: Add client validation?
