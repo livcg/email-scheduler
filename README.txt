@@ -33,13 +33,14 @@ x. Remove Mailgun login from config files & use env vars
 x. Validate email address - Use API (just search one from google) e.g. http://blog.mashape.com/list-of-25-email-validation-apis/
 x. Instead of removing sent emails from DB, keep record & mark as sent
 x. Validate email addy only if it's not empty
+x. Add root route
 * Add rspec tests
   * Send date time in past
   * Send date time ~now
   * Account for timezones
   * Etc.
 ***===>>> I'M HERE
-* Add root route
+* Rmv edit & destroy actions
 * Add helpful msgs to log
 * Add to README; change to md
 * Externalize strings, e.g. error msgs
@@ -54,7 +55,6 @@ https://emaillater.herokuapp.com/assets/application-595be6fdabce84ec71f1ace93c9d
 * Label timezone
 * If there are no emails to send, display msg
 * Improve styling
-* Rmv/implement Show|Edit|Destroy links
 * Only allow send dates & times in the future
 * Low pri: Add from address?
 * Low pri: HTML in body?
