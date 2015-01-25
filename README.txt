@@ -40,7 +40,7 @@ x. Instead of removing sent emails from DB, keep record & mark as sent
 x. Validate email addy only if it's not empty
 x. Add root route
 x. Rmv edit & destroy actions
-***===>>> I'M HERE
+x. Mv "New Email" link to top of page & change into a button
 * Add rspec tests
   * Send date time in past
   * Send date time ~now
@@ -51,7 +51,7 @@ x. Rmv edit & destroy actions
 * Low pri: Externalize strings, e.g. error msgs
 
 UI
-* Mv "New Email" link to top of page & change into a button
+***===>>> I'M HERE
 * Label timezone
 * If there are no emails to send, display msg
 * Improve styling
