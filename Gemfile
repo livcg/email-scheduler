@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Use dotenv for testing
+gem 'dotenv-rails', :groups => [:development, :test]
+
 # Use delayed_job job gueue
 gem 'delayed_job_active_record'
 
