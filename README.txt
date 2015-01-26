@@ -10,10 +10,41 @@ emails
 emails/<ID>
 new
 rails/mailers/emailer/schedule_email_preview
+Etc.
 
 
 -----
 TO DO
+
+* Add more rspec tests
+  * Controller
+  * Send date time in past
+  * Send date time ~now
+  * Account for timezones
+  * Etc.
+* Change error message for invalid email addy
+* Review POST /emails route; disable?
+* Allow POST /emails/new?
+* Don't allow DELETE of sent emails?
+* Add to README; change to md
+* Add helpful msgs to log
+* Low pri: Externalize strings, e.g. error msgs
+
+UI
+* Improve error message styling
+* Improve other styling
+* Display msg if there are no emails to send
+* Only allow send dates & times in the future
+* Use local timezone
+* Change label for send date time attribute
+* Low pri: Add from address?
+* Low pri: HTML in body?
+* Low pri: Change success page to redirect to show page w/ success msg?
+* Low pri: Add client validation?
+
+
+-----
+DONE
 
 x. Create Email model
 x. Create web form
@@ -45,27 +76,4 @@ x. Label timezone
 x. Add placeholder text for email addy
 x. Fix show view
 x. Incorporate Bootstrap
-* Add more rspec tests
-  * Send date time in past
-  * Send date time ~now
-  * Account for timezones
-  * Etc.
-* Review POST /emails route; disable?
-* Allow POST /emails/new?
-* Don't allow DELETE of sent emails?
-* Add to README; change to md
-* Add helpful msgs to log
-* Low pri: Externalize strings, e.g. error msgs
-
-UI
-***===>>> I'M HERE
-* Improve success & error message styling
-* Improve other styling
-* Display msg if there are no emails to send
-* Only allow send dates & times in the future
-* Use local timezone
-* Change label for send date time attribute
-* Low pri: Add from address?
-* Low pri: HTML in body?
-* Low pri: Change success page to redirect to show page w/ success msg?
-* Low pri: Add client validation?
+x. Improve success message styling
