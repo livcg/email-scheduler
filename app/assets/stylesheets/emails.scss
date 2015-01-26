@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.send-btn, .send-btn:visited, .send-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .create-btn {
   margin-top: 10px;
+}
+
+.show-email {
+  margin-top: 20px;
 }

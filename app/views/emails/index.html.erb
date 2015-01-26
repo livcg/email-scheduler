@@ -3,14 +3,14 @@
 <h1>FutureMail</h1>
 
 <div>
-<button type='button' class='btn btn-lg btn-default'><%= link_to 'Send an email in the future!', new_email_path %></button>
+<button type='button' class='btn btn-lg btn-primary'><%= link_to 'Send an email in the future!', new_email_path, class: "send-btn" %></button>
 </div>
 
 <hr/>
 
 <h2>Scheduled Emails</h2>
 
-<table class="table table-bordered">
+<table class="table table-striped">
   <thead>
     <tr>
       <th>To</th>
@@ -39,7 +39,7 @@
 
 <h2>Sent Emails</h2>
 
-<table class="table table-bordered">
+<table class="table table-striped">
   <thead>
     <tr>
       <th>To</th>
@@ -58,7 +58,6 @@
         <td><%= email.body %></td>
         <td><%= email.send_date_time %></td>
         <td><%= link_to 'View', email %></td>
-        <td><%= link_to 'Delete', email, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

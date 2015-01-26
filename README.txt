@@ -52,6 +52,7 @@ x. Incorporate Bootstrap
   * Etc.
 * Review POST /emails route; disable?
 * Allow POST /emails/new?
+* Don't allow DELETE of sent emails?
 * Add to README; change to md
 * Add helpful msgs to log
 * Low pri: Externalize strings, e.g. error msgs
@@ -59,7 +60,7 @@ x. Incorporate Bootstrap
 UI
 ***===>>> I'M HERE
 * Improve success & error message styling
-* Improve styling
+* Improve other styling
 * Display msg if there are no emails to send
 * Only allow send dates & times in the future
 * Use local timezone
