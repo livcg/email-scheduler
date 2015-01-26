@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :to %><br>
-    <%= f.text_field :to %>
+    <%= f.text_field :to, placeholder: "Email address" %>
   </div>
   <div class="field">
     <%= f.label :subject %><br>
@@ -25,9 +25,9 @@
   </div>
   <div class="field">
     <%= f.label :send_date_time %><br>
-    <%= f.datetime_select :send_date_time %>
+    <%= f.datetime_select :send_date_time %> UTC
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary create-btn" %>
   </div>
 <% end %>

@@ -2,11 +2,15 @@
 
 <h1>FutureMail</h1>
 
-<button type='button'><%= link_to 'Send an email in the future!', new_email_path %></button>
+<div>
+<button type='button' class='btn btn-lg btn-default'><%= link_to 'Send an email in the future!', new_email_path %></button>
+</div>
 
-<h1>Scheduled Emails</h1>
+<hr/>
 
-<table>
+<h2>Scheduled Emails</h2>
+
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>To</th>
@@ -31,11 +35,11 @@
   </tbody>
 </table>
 
-<br>
+<hr/>
 
-<h1>Sent Emails</h1>
+<h2>Sent Emails</h2>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>To</th>

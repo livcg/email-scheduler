@@ -41,23 +41,30 @@ x. Validate email addy only if it's not empty
 x. Add root route
 x. Rmv edit & destroy actions
 x. Mv "New Email" link to top of page & change into a button
-***===>>> I'M HERE
-* Add rspec tests
+x. Label timezone
+x. Add placeholder text for email addy
+x. Fix show view
+x. Incorporate Bootstrap
+* Add more rspec tests
   * Send date time in past
   * Send date time ~now
   * Account for timezones
   * Etc.
-* Add helpful msgs to log
+* Review POST /emails route; disable?
+* Allow POST /emails/new?
 * Add to README; change to md
+* Add helpful msgs to log
 * Low pri: Externalize strings, e.g. error msgs
 
 UI
-* Label timezone
-* If there are no emails to send, display msg
+***===>>> I'M HERE
+* Improve success & error message styling
 * Improve styling
+* Display msg if there are no emails to send
 * Only allow send dates & times in the future
+* Use local timezone
+* Change label for send date time attribute
 * Low pri: Add from address?
 * Low pri: HTML in body?
 * Low pri: Change success page to redirect to show page w/ success msg?
-* Low pri: Improve error message styling
 * Low pri: Add client validation?
